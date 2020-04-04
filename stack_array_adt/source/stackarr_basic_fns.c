@@ -73,8 +73,6 @@ int Pop_from_stack(t_stack *stack)
 	{
 		printf("Error: stack is underflow (Pop_from_stack())\n");
 		exit(0);
-		// // think about additional chech in thos case
-		// return (FALSE);
 	}
 	else
 	{
