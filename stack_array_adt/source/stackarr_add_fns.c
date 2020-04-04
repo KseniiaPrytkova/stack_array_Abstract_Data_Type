@@ -67,24 +67,24 @@ void Print_two_stacks(t_stack *stack_a, t_stack *stack_b)
 		if (i == stack_a->counter - 1)
 		{
 			red();
-			printf("%12d", stack_a->array[i]);
+			printf("%16d", stack_a->array[i]);
 			reset();
 		}
 		else
-			printf("%12d", stack_a->array[i]);
+			printf("%16d", stack_a->array[i]);
 
 		if (i == stack_b->counter - 1)
 		{
 			red();
-			printf("%20d\n", stack_b->array[i]);
+			printf("%11d\n", stack_b->array[i]);
 			reset();
 		}
 		else
-			printf("%20d\n", stack_b->array[i]);
+			printf("%11d\n", stack_b->array[i]);
 		i--;
 	}
-	printf("%12s %19s\n", "-", "-" );
-	printf("%12s %19s\n", "a", "b" );
+	printf("%16s %10s\n", "-", "-" );
+	printf("%16s %10s\n", "a", "b" );
 }
 
 void Print_stacks_info(t_stack *stack_a, t_stack *stack_b)
